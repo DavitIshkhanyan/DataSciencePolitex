@@ -46,7 +46,26 @@ data = {'color': ['blue', 'green','yellow','red','white'],
         'price': [1.2,1.0,0.6,0.9,1.7]}
 frame = pd.DataFrame(data)
 
-ser = pd.Series(np.arange(5))
-frame['new'] = ser
-print(np.arange(5))
-print(frame)
+# ser = pd.Series(np.arange(5))
+# frame['new'] = ser
+# print(np.arange(5))
+# print(frame)
+
+# print(frame.isin([1.0,'pen', 'yellow']))
+
+# print(frame[frame.isin([1.0,'pen', 'yellow'])])
+
+# del frame['new']
+# print(frame)
+
+# print(frame[frame.price < 1.2])
+
+# ////////////////////////////////////////
+
+nestdict = {'red': {2012:22,2013:33},
+                'white': {2011: 13, 2012: 22, 2013: 16},
+                'blue': {2011: 17, 2012: 27, 2013: 18}}
+frame2 = pd.DataFrame(nestdict)
+print(frame2)
+
+print(frame2.T)
