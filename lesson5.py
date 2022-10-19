@@ -69,3 +69,4 @@ frame2 = pd.DataFrame(nestdict)
 print(frame2)
 
 print(frame2.T)
+print(frame2.transpose())
